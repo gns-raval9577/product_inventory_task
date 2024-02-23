@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+
+:root {
+    --header-height: 3rem;
+    --nav-width: 68px;
+    --first-color: #2600c1;
+    --first-color-light: #AFA5D9;
+    --white-color: #F7F6FB;
+    --light-red-color: #f46a6a;
+    --light-green-color: #34c38f;
+    --light-blue-color: #50a5f1;
+    --light-purple-color: #556ee6;
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    --z-fixed: 100;
+}
+
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    /* transition: all .5s; */
+    box-sizing: border-box;
+    /* overflow-x:hidden ; */
+    /* overflow-y: hidden; */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.adminProfile label{
+    color: #212429;
+    font-weight: 600;
+}
+
+.adminProfile label, .adminProfile img{
+    cursor: pointer;
+}
+
+nav {
+    padding: 15px;
+}
+
+.body_content {
+    height: 80vh;
+}
+
+#td_fixedWidth{
+    white-space: normal;
+    width: 30%;
+}
+
+
+
+.content {
+    margin-top: 20px;
+}
+
+.text-input {
+    outline: none !important;
+}
+.datepicker td, .datepicker th{
+    width: 45px !important;
+}
+
+.greenStatus{
+    background-color: var(--light-green-color);
+    color: white;
+}
+
+.redStatus{
+    background-color: var(--light-red-color);
+    color: white;
+}
+
+select{
+
+    -webkit-appearance: none !important;
+    text-indent: 0 !important;
+}
+
+button,
+.link_Tag {
+    border: none;
+    outline: none;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    border-radius: 0.25rem;
+}
+
+.form_Div {
+    border: 1px solid rgba(0, 0, 0, .125)
+}
+
+
+
+#includeTestModal .modal-dialog,
+#includeTestModal .modal-content-height,
+#addTestModal .modal-dialog,
+#addTestModal .modal-content-height, #childTestModal .modal-dialog,
+#childTestModal .modal-content-height,
+#includeTestModalgeneratecoa .modal-dialog,
+#includeTestModalgeneratecoa .modal-content-height
+{
+    height: 50% !important;
+}
+
+
+
+/* .modal-dialog,
+ .modal-content-height {
+    height: 50% !important;
+}  */
+
+.bootstrap-select {
+    width: 100% !important;
+}
+
+.bootstrap-select span {
+    color: black;
+}
+
+.modal_select {
+    height: 70%;
+}
+
+.modal_btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+/* Login , Forget, Reset Password */
+
+.login_section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.auth_form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.2); */
+}
+
+.form_header {
+    text-align: center;
+}
+
+.form_header h2 {
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+.form_content {
+    width: 70%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.form_input {
+    width: 100%;
+    border-bottom: 1px solid rgb(68 71 72);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.form_input input {
+    width: 80%;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+
+input::placeholder {
+    font-weight: 300;
+}
+
+.ic_eye {
+    cursor: pointer;
+}
+
+.form_Link {
+    width: 100%;
+    text-align: end;
+}
+
+.form_Link a {
+    color: rgb(68 71 72);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.form_Link a:hover {
+    border-bottom: 1px solid rgb(68 71 72);
+    transition: ease-in 0.8s;
+}
+
+.form_content button {
+    border: none;
+    outline: none;
+    background-color: rgb(68 71 72);
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+.forgetPassword_Form {
+    justify-content: space-evenly;
+}
+
+
+/*----------DataTables--------------*/
+
+th,
+td {
+    /* text-align: center !important; */
+    padding: 0.9rem 0.5rem !important
+}
+
+.page-item{
+    margin: 0px 5px;
+}
+
+.page-item.active .page-link {
+    background-color: #a0adeb !important;
+    border-color: #a0adeb !important;
+}
+
+
+.purpleBtn {
+    margin-right: 15px;
+    color: var(--light-purple-color);
+    background-color: rgba(85, 110, 230, .1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.purpleBtn:hover {
+    color: #fff;
+    background-color: var(--light-purple-color);
+
+}
+
+.greenBtn {
+    color: var(--light-green-color);
+    background-color: rgba(52, 195, 143, .1);
+}
+
+.greenBtn:hover {
+    color: #fff;
+    background-color: var(--light-green-color);
+}
+
+.redBtn {
+    color: var(--light-red-color);
+    background-color: rgba(244, 106, 106, .1);
+}
+
+.redBtn:hover {
+    background-color: var(--light-red-color);
+    color: var(--white-color);
+}
+
+.blueBtn {
+    color: var(--light-blue-color);
+    background-color: rgba(80, 165, 241, .1);
+}
+
+.blueBtn:hover {
+    background-color: var(--light-blue-color);
+    color: white;
+}
+
+.mr_btn {
+    margin-right: 15px;
+}
+
+/*----------Dashboard--------------*/
+
+.dashboard a{
+    color: #212429;;
+}
+
+.content_container {
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.date_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.date_container div {
+    margin-right: 10px;
+}
+
+.date_container input {
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #9d9d9d;
+}
+
+.date_btn button {
+
+    padding: 8px 50px;
+    outline: none;
+    border: none;
+    background-color: #a194ff;
+    border-radius: 0.25rem;
+    color: white;
+
+}
+
+.cardDetail {
+    margin-bottom: 30px;
+}
+
+.lightBtn {
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+
+
+
+
+.form-switch .form-check-input:checked {
+    background-color: var(--light-purple-color);
+    border: none;
+}
+
+/*----------Add Product----------*/
+
+.form_footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form_btn {
+    border-radius: 0.25rem;
+    padding: 8px 35px;
+}
+
+
+
+/*---------Product Details----------*/
+
+.productDetails {
+    /* height: 100vh; */
+}
+
+.details_Content {
+    height: 100%;
+    flex-direction: column;
+}
+
+.test_Details_Content {
+    height: 90%;
+}
+
+.testDetails_Div {
+    height: 65%;
+    flex-direction: column;
+}
+
+.testDetails_List {
+    height: 50vh;
+}
+
+
+
+.pd_form {
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+/* --------------- Modal ---------------*/
+
+.modal_Btn {
+    padding: 7px 30px;
+}
+
+.modal_input input:not(:first-child) {
+    margin-top: 28px;
+}
+
+
+.testDetails_heading,
+.testDetails_info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.testDetails_info {
+    margin-top: 20px;
+}
+
+.details {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.testDetails_heading>.details h6 {
+    font-weight: 600;
+}
+
+.testDetails_info button {
+    padding: 5px 30px;
+}
+
+/* ---------Add Sample ----------*/
+
+.input_div {
+    display: flex;
+    justify-content: center;
+}
+
+.addBtn {
+    margin-left: 20px;
+    width: 20%;
+    padding: 0px 5px;
+}
+
+/* ---------View Sample ----------*/
+
+.sampleHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.viewSample button,
+.sampleTag {
+    padding: 9px 60px;
+}
+
+.test_List {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.test_List h5 {
+    margin-right: 20px;
+    border-radius: 0.25rem;
+    padding: 5px 15px;
+    color: var(--light-blue-color);
+    background-color: rgba(80, 165, 241, .1);
+}
+
+.coa_InputDiv>.form-group{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.coa_InputDiv>.form-group input{
+    width: 50%;
+    margin-right: 50px;
+}
+
+
+.coa_InputDiv h5{
+    padding-left: 15px;
+}
+
+.allSample .lightBtn{
+    font-size: 12px;
+}
+
+.allSample th ,.allSample td{
+    /* text-align: center !important; */
+    font-size: 12px;
+}
+
+.coa_table_Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coa_table_Header button{
+    padding: 8px 25px;
+}
+
+
+.editInvoice{
+    height: 150vh;
+}
+
+.invoiceBtn{
+    padding: 8px 20px;
+}
+
+.invc_btns_div{
+    display: flex;
+    justify-content: end;
+}
+
+.invc_btns_div button{
+   padding: 8px 40px
+}
+
+.invoice_td{
+    white-space: normal !important;
+    width: 20%;
+}
+
+.admin_form_input{
+    height: 56%;
+}
+
+.admin_form_input input{
+    position: relative;
+    z-index: 1;
+} 
+
+.admin_form_input img{
+    position: relative;
+    z-index: 2;
+    top: -56%;
+    left: 96%;
+} 
+
+.admin_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiddenInput{
+    display: none;
+}
+.crossBtn{
+    background-color: transparent;
+    background-blend-mode: multiply;
+}
+
+
+.tableoverflow{
+    overflow-x: auto;
+}
+
+.pagination_Numbers{
+    display: flex;
+    justify-content: end;
+}
+
+
+
+.dataTables_filter{
+    display: flex;
+    justify-content: end;
+}
+
+.dataTables_filter label{
+    display: flex;
+    gap: 10px;
+}
+
+.imgDiv{
+    height: 100%;
+    width: 50%;
+}
+
+.imgDiv img{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+}
+
+/* this is required symbol * red color  */
+.required::after{
+    content:"*";   
+    color: red;
+    font-size: 20px;
+}
