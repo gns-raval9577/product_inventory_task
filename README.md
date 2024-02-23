@@ -20,5 +20,3 @@ Password: Admin@123
 
 Note: The maximum image upload size is 2048 KB.
 
-You can find the source code of the project on GitHub:
-https://github.com/gns-raval9577/product_inventory_task
